@@ -1,0 +1,10 @@
+<map id="DiscoSquare" name="DiscoSquare">
+<area shape="rect" id="node1" title=" " alt="" coords="144,184,249,211"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,92,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="117,95,199,121"/>
+<area shape="rect" id="node4" href="$classDiscoPane.html" title=" " alt="" coords="223,95,314,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="148,5,203,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="227,5,310,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="335,5,411,32"/>
+<area shape="rect" id="node8" title=" " alt="" coords="339,95,396,121"/>
+</map>

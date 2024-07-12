@@ -1,0 +1,143 @@
+\hypertarget{classDiscoSquare}{}\doxysection{Disco\+Square Class Reference}
+\label{classDiscoSquare}\index{DiscoSquare@{DiscoSquare}}
+
+
+Inheritance diagram for Disco\+Square\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classDiscoSquare__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Disco\+Square\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDiscoSquare__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDiscoSquare_aadf9a4a3791a1f7b72c540a6ebf3eb08}{Disco\+Square}} (\mbox{\hyperlink{classDiscoPane}{Disco\+Pane}} pane, int x, int y)
+\item 
+void \mbox{\hyperlink{classDiscoSquare_a0dea418c59106f80f2a307e7774140de}{start}} ()
+\item 
+void \mbox{\hyperlink{classDiscoSquare_afb8dc724a7de9b1a0149d3ffe9c570b3}{stop}} ()
+\item 
+synchronized boolean \mbox{\hyperlink{classDiscoSquare_a885b8aaab39ca3e03e7ebb61c2c1d240}{is\+Suspended}} ()
+\item 
+synchronized Color \mbox{\hyperlink{classDiscoSquare_a368a382dc9fca61eeb2735e9d8748651}{get\+Color}} ()
+\item 
+void \mbox{\hyperlink{classDiscoSquare_aca4438438ab67165abc7dce0df1118ab}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classDiscoSquare_a247a0d030d703a0be9373e1e8ab4cadb}{toggle\+Suspension}} ()
+\item 
+synchronized void \mbox{\hyperlink{classDiscoSquare_a669ca9fa57a6041998d7aa084d5bc7d4}{set\+Color}} (Color color)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDiscoSquare_a267563220fd4e0dc84469b6cc0b64aae}\label{classDiscoSquare_a267563220fd4e0dc84469b6cc0b64aae}} 
+final int {\bfseries x}
+\item 
+\mbox{\Hypertarget{classDiscoSquare_a58a55e20d5a8948bfd8c71361cf3f730}\label{classDiscoSquare_a58a55e20d5a8948bfd8c71361cf3f730}} 
+final int {\bfseries y}
+\item 
+\mbox{\Hypertarget{classDiscoSquare_ae45a5397d2b6607450a07841dd5cbf51}\label{classDiscoSquare_ae45a5397d2b6607450a07841dd5cbf51}} 
+final \mbox{\hyperlink{classDiscoPane}{Disco\+Pane}} {\bfseries pane}
+\item 
+\mbox{\Hypertarget{classDiscoSquare_a91a05d12d95c1f2dd646cbcf84e8c41e}\label{classDiscoSquare_a91a05d12d95c1f2dd646cbcf84e8c41e}} 
+Color {\bfseries color}
+\item 
+\mbox{\Hypertarget{classDiscoSquare_afe2c779b8b4a607e76780c2f2a13a295}\label{classDiscoSquare_afe2c779b8b4a607e76780c2f2a13a295}} 
+boolean {\bfseries thread\+Suspended}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classDiscoSquare}{Disco\+Square}} is a class that represents a square in the \mbox{\hyperlink{classDiscoPane}{Disco\+Pane}} grid. It extends the Java\+FX Rectangle class and implements the Runnable interface. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDiscoSquare_aadf9a4a3791a1f7b72c540a6ebf3eb08}\label{classDiscoSquare_aadf9a4a3791a1f7b72c540a6ebf3eb08}} 
+\index{DiscoSquare@{DiscoSquare}!DiscoSquare@{DiscoSquare}}
+\index{DiscoSquare@{DiscoSquare}!DiscoSquare@{DiscoSquare}}
+\doxysubsubsection{\texorpdfstring{DiscoSquare()}{DiscoSquare()}}
+{\footnotesize\ttfamily Disco\+Square.\+Disco\+Square (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDiscoPane}{Disco\+Pane}}}]{pane,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \mbox{\hyperlink{classDiscoSquare}{Disco\+Square}} object with the given parameters. 
+\begin{DoxyParams}{Parameters}
+{\em pane} & The \mbox{\hyperlink{classDiscoPane}{Disco\+Pane}} object that the square belongs to. \\
+\hline
+{\em x} & The x-\/coordinate of the square. \\
+\hline
+{\em y} & The y-\/coordinate of the square. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDiscoSquare_a368a382dc9fca61eeb2735e9d8748651}\label{classDiscoSquare_a368a382dc9fca61eeb2735e9d8748651}} 
+\index{DiscoSquare@{DiscoSquare}!getColor@{getColor}}
+\index{getColor@{getColor}!DiscoSquare@{DiscoSquare}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily synchronized Color Disco\+Square.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the color of the square. \begin{DoxyReturn}{Returns}
+A Color object representing the color of the square. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiscoSquare_a885b8aaab39ca3e03e7ebb61c2c1d240}\label{classDiscoSquare_a885b8aaab39ca3e03e7ebb61c2c1d240}} 
+\index{DiscoSquare@{DiscoSquare}!isSuspended@{isSuspended}}
+\index{isSuspended@{isSuspended}!DiscoSquare@{DiscoSquare}}
+\doxysubsubsection{\texorpdfstring{isSuspended()}{isSuspended()}}
+{\footnotesize\ttfamily synchronized boolean Disco\+Square.\+is\+Suspended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the thread is suspended. \begin{DoxyReturn}{Returns}
+A boolean indicating whether the thread is suspended. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiscoSquare_aca4438438ab67165abc7dce0df1118ab}\label{classDiscoSquare_aca4438438ab67165abc7dce0df1118ab}} 
+\index{DiscoSquare@{DiscoSquare}!run@{run}}
+\index{run@{run}!DiscoSquare@{DiscoSquare}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Disco\+Square.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The run method for the Runnable interface. It continuously updates the color of the square randomly or based on the colors of its neighbors. \mbox{\Hypertarget{classDiscoSquare_a669ca9fa57a6041998d7aa084d5bc7d4}\label{classDiscoSquare_a669ca9fa57a6041998d7aa084d5bc7d4}} 
+\index{DiscoSquare@{DiscoSquare}!setColor@{setColor}}
+\index{setColor@{setColor}!DiscoSquare@{DiscoSquare}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily synchronized void Disco\+Square.\+set\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Sets the color of the square. 
+\begin{DoxyParams}{Parameters}
+{\em color} & The color to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDiscoSquare_a0dea418c59106f80f2a307e7774140de}\label{classDiscoSquare_a0dea418c59106f80f2a307e7774140de}} 
+\index{DiscoSquare@{DiscoSquare}!start@{start}}
+\index{start@{start}!DiscoSquare@{DiscoSquare}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Disco\+Square.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Starts the thread. \mbox{\Hypertarget{classDiscoSquare_afb8dc724a7de9b1a0149d3ffe9c570b3}\label{classDiscoSquare_afb8dc724a7de9b1a0149d3ffe9c570b3}} 
+\index{DiscoSquare@{DiscoSquare}!stop@{stop}}
+\index{stop@{stop}!DiscoSquare@{DiscoSquare}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Disco\+Square.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Stops the thread. \mbox{\Hypertarget{classDiscoSquare_a247a0d030d703a0be9373e1e8ab4cadb}\label{classDiscoSquare_a247a0d030d703a0be9373e1e8ab4cadb}} 
+\index{DiscoSquare@{DiscoSquare}!toggleSuspension@{toggleSuspension}}
+\index{toggleSuspension@{toggleSuspension}!DiscoSquare@{DiscoSquare}}
+\doxysubsubsection{\texorpdfstring{toggleSuspension()}{toggleSuspension()}}
+{\footnotesize\ttfamily void Disco\+Square.\+toggle\+Suspension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Toggles the suspension of the thread. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Disco\+Square.\+java\end{DoxyCompactItemize}

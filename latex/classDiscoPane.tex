@@ -1,0 +1,166 @@
+\hypertarget{classDiscoPane}{}\doxysection{Disco\+Pane Class Reference}
+\label{classDiscoPane}\index{DiscoPane@{DiscoPane}}
+
+
+Inheritance diagram for Disco\+Pane\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classDiscoPane__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Disco\+Pane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{classDiscoPane__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{classDiscoPane_a2bc31ef57c1fada6f53e5f26009425d1}{get\+Random\+Delay}} ()
+\item 
+double \mbox{\hyperlink{classDiscoPane_a1421c04577e2a17459ecb481c5a887e0}{get\+Random\+Probability}} ()
+\item 
+double \mbox{\hyperlink{classDiscoPane_af7c1143de74de59d2511cec8022dd5fe}{get\+Probability}} ()
+\item 
+Color \mbox{\hyperlink{classDiscoPane_a08d75a5449c7563ff95ea2c53e76d21b}{get\+Random\+Color}} ()
+\item 
+\mbox{\hyperlink{classDiscoSquare}{Disco\+Square}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classDiscoPane_abfeb994bd4759b1f45f601993830dca6}{get\+Neighbors}} (int x, int y)
+\item 
+\mbox{\hyperlink{classDiscoPane_a3708e6fdd336feccae77d3e64e869188}{Disco\+Pane}} (int width, int height, int delay, double probability)
+\item 
+void \mbox{\hyperlink{classDiscoPane_ae919494845176ebf09563a9e663e49a4}{stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDiscoSquare}{Disco\+Square}} \mbox{\hyperlink{classDiscoPane_af40f7bae2a5ec69564969ec67bc82f2a}{get\+Square}} (int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDiscoPane_ac37cc5dd3aeba47e5067921d33006351}\label{classDiscoPane_ac37cc5dd3aeba47e5067921d33006351}} 
+final int {\bfseries width}
+\item 
+\mbox{\Hypertarget{classDiscoPane_ae8c794b52e7e8e36e4a886f32b27718b}\label{classDiscoPane_ae8c794b52e7e8e36e4a886f32b27718b}} 
+final int {\bfseries height}
+\item 
+\mbox{\Hypertarget{classDiscoPane_aadd970c8f12a8dd5a07fa01344953c7b}\label{classDiscoPane_aadd970c8f12a8dd5a07fa01344953c7b}} 
+final int {\bfseries delay}
+\item 
+\mbox{\Hypertarget{classDiscoPane_ac24e242ba02a67cc3bfa28ec8b358220}\label{classDiscoPane_ac24e242ba02a67cc3bfa28ec8b358220}} 
+final double {\bfseries probability}
+\item 
+\mbox{\Hypertarget{classDiscoPane_af3549a84af0eb85248615d1a5febd25c}\label{classDiscoPane_af3549a84af0eb85248615d1a5febd25c}} 
+final Random {\bfseries random} = new Random()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classDiscoPane}{Disco\+Pane}} is a class that represents a grid of \mbox{\hyperlink{classDiscoSquare}{Disco\+Square}} objects. It extends the Java\+FX Pane class and contains methods for managing the grid and its squares. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDiscoPane_a3708e6fdd336feccae77d3e64e869188}\label{classDiscoPane_a3708e6fdd336feccae77d3e64e869188}} 
+\index{DiscoPane@{DiscoPane}!DiscoPane@{DiscoPane}}
+\index{DiscoPane@{DiscoPane}!DiscoPane@{DiscoPane}}
+\doxysubsubsection{\texorpdfstring{DiscoPane()}{DiscoPane()}}
+{\footnotesize\ttfamily Disco\+Pane.\+Disco\+Pane (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{delay,  }\item[{double}]{probability }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \mbox{\hyperlink{classDiscoPane}{Disco\+Pane}} object with the given parameters. 
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the grid. \\
+\hline
+{\em height} & The height of the grid. \\
+\hline
+{\em delay} & The delay for the color change. \\
+\hline
+{\em probability} & The probability for choosing the color randomly. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDiscoPane_abfeb994bd4759b1f45f601993830dca6}\label{classDiscoPane_abfeb994bd4759b1f45f601993830dca6}} 
+\index{DiscoPane@{DiscoPane}!getNeighbors@{getNeighbors}}
+\index{getNeighbors@{getNeighbors}!DiscoPane@{DiscoPane}}
+\doxysubsubsection{\texorpdfstring{getNeighbors()}{getNeighbors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDiscoSquare}{Disco\+Square}}\mbox{[}$\,$\mbox{]} Disco\+Pane.\+get\+Neighbors (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the neighbors of a given square in the grid. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the square. \\
+\hline
+{\em y} & The y-\/coordinate of the square. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of \mbox{\hyperlink{classDiscoSquare}{Disco\+Square}} objects representing the neighbors of the square. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiscoPane_af7c1143de74de59d2511cec8022dd5fe}\label{classDiscoPane_af7c1143de74de59d2511cec8022dd5fe}} 
+\index{DiscoPane@{DiscoPane}!getProbability@{getProbability}}
+\index{getProbability@{getProbability}!DiscoPane@{DiscoPane}}
+\doxysubsubsection{\texorpdfstring{getProbability()}{getProbability()}}
+{\footnotesize\ttfamily double Disco\+Pane.\+get\+Probability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the probability for choosing the color randomly. \begin{DoxyReturn}{Returns}
+A double representing the probability. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiscoPane_a08d75a5449c7563ff95ea2c53e76d21b}\label{classDiscoPane_a08d75a5449c7563ff95ea2c53e76d21b}} 
+\index{DiscoPane@{DiscoPane}!getRandomColor@{getRandomColor}}
+\index{getRandomColor@{getRandomColor}!DiscoPane@{DiscoPane}}
+\doxysubsubsection{\texorpdfstring{getRandomColor()}{getRandomColor()}}
+{\footnotesize\ttfamily Color Disco\+Pane.\+get\+Random\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a random color. \begin{DoxyReturn}{Returns}
+A Color object representing the random color. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiscoPane_a2bc31ef57c1fada6f53e5f26009425d1}\label{classDiscoPane_a2bc31ef57c1fada6f53e5f26009425d1}} 
+\index{DiscoPane@{DiscoPane}!getRandomDelay@{getRandomDelay}}
+\index{getRandomDelay@{getRandomDelay}!DiscoPane@{DiscoPane}}
+\doxysubsubsection{\texorpdfstring{getRandomDelay()}{getRandomDelay()}}
+{\footnotesize\ttfamily long Disco\+Pane.\+get\+Random\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a random delay within a range. \begin{DoxyReturn}{Returns}
+A long representing the random delay. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiscoPane_a1421c04577e2a17459ecb481c5a887e0}\label{classDiscoPane_a1421c04577e2a17459ecb481c5a887e0}} 
+\index{DiscoPane@{DiscoPane}!getRandomProbability@{getRandomProbability}}
+\index{getRandomProbability@{getRandomProbability}!DiscoPane@{DiscoPane}}
+\doxysubsubsection{\texorpdfstring{getRandomProbability()}{getRandomProbability()}}
+{\footnotesize\ttfamily double Disco\+Pane.\+get\+Random\+Probability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a random probability. \begin{DoxyReturn}{Returns}
+A double representing the random probability. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiscoPane_af40f7bae2a5ec69564969ec67bc82f2a}\label{classDiscoPane_af40f7bae2a5ec69564969ec67bc82f2a}} 
+\index{DiscoPane@{DiscoPane}!getSquare@{getSquare}}
+\index{getSquare@{getSquare}!DiscoPane@{DiscoPane}}
+\doxysubsubsection{\texorpdfstring{getSquare()}{getSquare()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDiscoSquare}{Disco\+Square}} Disco\+Pane.\+get\+Square (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Returns a \mbox{\hyperlink{classDiscoSquare}{Disco\+Square}} object at a given position in the grid. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the square. \\
+\hline
+{\em y} & The y-\/coordinate of the square. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classDiscoSquare}{Disco\+Square}} object at the given position. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiscoPane_ae919494845176ebf09563a9e663e49a4}\label{classDiscoPane_ae919494845176ebf09563a9e663e49a4}} 
+\index{DiscoPane@{DiscoPane}!stop@{stop}}
+\index{stop@{stop}!DiscoPane@{DiscoPane}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Disco\+Pane.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Stops all squares in the grid. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Disco\+Pane.\+java\end{DoxyCompactItemize}
